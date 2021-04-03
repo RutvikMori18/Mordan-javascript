@@ -114,3 +114,104 @@ console.log(typeof(address));
 const date=new Date();
 console.log(date);
 console.log(typeof(date));
+
+
+//type conversion
+//1 number to string
+let val;
+val=String(5+5);
+console.log(val);
+console.log(typeof(val));
+console.log(val.length);
+
+//2 boolean to string
+ val1=String(true);
+ console.log(typeof(val1));
+console.log(val1.length);
+
+//date to string
+ var val2=String(new Date());
+//array to string 
+var val3= String([1,2,3,4,5]);
+console.log(typeof(val3));
+console.log(val3.length);
+
+//to string
+var val5=(6).toString();
+console.log(typeof(val5));
+console.log(val5.length);
+
+//simple math with numbers
+const num1=200;
+const num2=50;
+var val1=0;
+val1 =num1+num2;
+val1 =num1-num2;
+val1 =num1*num2;
+val1 =num1/num2;
+val1 = num1%num2;
+console.log(val1);
+
+//math object
+
+val1=Math.PI;
+val1=Math.E;
+val1=Math.round(2.3);
+val1=Math.ceil(2.40);
+val1=Math.floor(2.8);
+val1=Math.sqrt(64);
+val1=Math.abs(-7);
+val1=Math.pow(8,2);
+val1=Math.min(2,3,5,1,0,111);
+val1=Math.max(1,2,5,4,5,6,9,88);
+val1=Math.random();
+val1=Math.floor(Math.random()*20 +1);
+console.log(val1);
+
+//string concatination
+
+const firstName='Rutvik';
+const lastName='mori';
+
+var val5;
+val5=firstName+lastName;
+//concatination
+val5=firstName + ' '+lastName;
+
+//append
+val5=' brad ';
+val5+='traversy';
+
+//escaping
+val5='hello,that\'s aweasom I can\'t wait';
+
+//length
+val5=firstName.length;
+
+//concate()
+val5=firstName.concat(' ',lastName);
+
+//chane casee
+val5=firstName.toLowerCase();
+
+
+//index of
+val5=firstName.indexOf('v');
+
+//char at
+val5=firstName.charAt(2);
+
+//get last char
+val5=firstName.charAt(firstName.length-1);
+
+//substring
+val5=firstName.substring(0,3);
+
+
+//split
+const First='hello there my name is Rutvik';
+val5=First.split(' ');
+
+//replace
+val5=First.replace('Rutvik','Mori');
+console.log(val5);
